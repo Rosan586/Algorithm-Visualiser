@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat+Alternates:wght@600&display=swap');
+  #container {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    background-color: #da037c;
+  }
+body {
+			font-family: 'Montserrat Alternates', sans-serif;
+			margin:0;
+			scroll-behavior: smooth;
+			overflow-x: hidden;
+			background-image: url('blur5.png');
+			background-repeat: no-repeat;
+			backdrop-filter: blur(5px);
+}
+.title{
+			font-family: 'Bruno Ace SC', cursive;
+			margin-left: 400px;
+			font-size: 60px;
+      margin-bottom:0px;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.start {
+  background-color: green;
+}
+
+.end {
+  background-color: red;
+}
+
+.visited {
+  background-color: lightblue;
+}
+
+.path {
+  background-color: yellow;
+}
+
+#start-btn,#reload-button {
+  display:inline;
+  justify-items: center;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 500px;
+  margin-top:25px;
+  margin-bottom:25px;
+}
+
+.square {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.start {
+  background-color: green;
+}
+
+.end {
+  background-color: red;
+}
+
+.visited {
+  background-color: lightblue;
+}
+
+.path {
+  background-color: yellow;
+}
+.button1,.button2 {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			cursor: pointer;
+			border-radius: 10px;
+			margin-right: 10px; 
+      margin-bottom:10px;
+}
+
+.button1{
+  margin-left:650px;
+}
+
+.button1:hover ,.button2:hover{
+			background-color: #3e8e41;
+}
+.legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    position: relative;
+  }
+
+  .legend-box {
+    display: inline;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid #000;
+  }
+
+  .start-node .legend-box {
+    background-color: green;
+  }
+
+  .end-node .legend-box {
+    background-color: red;
+  }
+
+  .path1 .legend-box {
+    background-color: yellow;
+  }
+
+  .path .legend-box::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  span{
+    background-color: none;
+  }
+.description{
+    width:50%;
+    text-align:left;
+  }
+  .description,.table{
+    display:inline-table;
+  }
+  .body{
+    margin:0px;
+  }
+  .table{
+    margin-top:20px;
+  }
+  .description{
+    margin-left:50px;
+    margin-right:300px;
+  }
+  .column1{
+    border-right:1px solid orange;
+    border-bottom:1px solid orange;
+  }
+  .column2{
+    border-bottom:1px solid orange;
+  }
+  .description,.table{
+    font-size:20px;
+    font-family:sans-serif;
+  }
+  .para{
+    margin-top:30px;
+  }
+  .em{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .bfs-des{
+	margin-top:20px;
+	background-color: #da037c;
+  }
+  .styler{
+	font-family: 'Bruno Ace SC', cursive;
+	font-size: 40px;
+	text-decoration: underline;
+  }
+
+  </style>
+</head>
+<body>
+  <h1 class="title">Breadth First Search</h1>
+  <div id="container"></div>
+  <div class="legend">
+    <div class="legend-item start-node">
+      <div class="legend-box"></div>
+      <span>Start Node</span>
+    </div>
+    <div class="legend-item end-node">
+      <div class="legend-box"></div>
+      <span>End Node</span>
+    </div>
+    <div class="legend-item path1">
+      <div class="legend-box"></div>
+      <span>Path Returned</span>
+    </div>
+  </div>
+</div>
+    <div id="contain">
+      <button class="button1" id="start-btn" onclick="startBFS()">Start BFS</button>
+      <button class="button2" id="reload-button">Reload</button>
+      <script src="bfs.js"></script>
+    </div>
+    <div class="bfs-des">
+    <div class="description">
+      <p class="styler">Description:</p>
+      <p class="para">Breadth-first search (BFS) is an algorithm for searching a tree data structure for a node that satisfies a given property. It starts at the tree root and explores all nodes at the present depth prior to moving on to the nodes at the next depth level. Extra memory, usually a queue, is needed to keep track of the child nodes that were encountered but not yet explored.</p>
+      <p>For example, in a chess endgame a chess engine may build the game tree from the current position by applying all possible moves, and use breadth-first search to find a win position for white. Implicit trees (such as game trees or other problem-solving trees) may be of infinite size; breadth-first search is guaranteed to find a solution node[1] if one exists</p>
+      <p>In contrast, (plain) depth-first search, which explores the node branch as far as possible before backtracking and expanding other nodes,[2] may get lost in an infinite branch and never make it to the solution node. Iterative deepening depth-first search avoids the latter drawback at the price of exploring the tree's top parts over and over again. On the other hand, both depth-first algorithms get along without extra memory.</p>
+    </div>
+    <div class="table">
+      <p class="styler">Complexity:</p>
+      <table>
+        <thead>
+          <tr>
+            <td class="column1"><p>Complexity</p></td>
+            <td class="column2"><p>O(V+E)</p></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><p>V-Vertices</p></td>
+            <td><p>E-Edges</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

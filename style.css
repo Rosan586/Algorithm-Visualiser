@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat+Alternates:wght@600&display=swap');
+html{
+    scroll-behavior:smooth;
+}
+:root{
+    --bg-color: #D8D8D8;
+}
+body{
+    margin:0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+    
+  
+  p {
+    font-size: 25px;
+  }
+ 
+#text{
+    position: absolute;
+    font-size: 50px;
+    margin-top: 270px;
+    pointer-events: none;
+}
+
+.ro{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:30px 100px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+.logo {
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 2em;
+    padding: 6px 15;
+}
+.head{
+    font-family:Arial, Helvetica, sans-serif ;
+}
+.navigation a{
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 30px;
+    margin: 0 10px;
+    font-weight: 600; 
+}
+
+nav{
+    margin-right: 120px;
+}
+
+.navigation a:hover,
+.navigation a.active{
+    background: white;
+    color:rgb(36, 5, 240);
+}
+#title{
+    margin-top: 170px;
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: 1500;
+    transform: translateZ(-5px);
+    font-size: 90px;
+    position: relative;
+    animation-duration: 4s;
+    animation-delay: -2s;
+    animation: fadeinout 3.5s ease-out;   
+}
+/* .Sorting-description{
+    position: relative;
+    animation-duration: 4s;
+    animation-delay: -2s;
+    animation: fadeinout 3s ease-out;
+} */
+
+#div1{ animation-timing-function: linear;}
+
+@keyframes fadeinout {
+    100%{ opacity: 1;}
+    from {left:-400px;}
+    to {left:0px;}
+    0%{ opacity: 0}
+}
+/* For the Background Elements and Parallax effect */
+#mount1{
+    position:absolute;
+    height: 78%;
+    margin-left: 50px;
+    margin-top: 220px;
+}
+#mount2{
+    position:absolute;
+    height: 90%;
+    margin-left: 650px ;   
+}
+#mount3{
+    position: absolute;
+    height: 600px;
+    margin-top: 180px;
+    margin-left: 150px;
+    z-index: 0;
+}
+#land1{
+    position: absolute;
+    height: 300px;
+    margin-top: 460px;
+}
+#sky{
+    position: absolute;
+    margin-left: 100px;
+    height: 1500px;
+    width: 2000px;
+}
+#river{
+    position: absolute;
+    height:150px ;
+    margin-top: 480px;
+}
+#palm1{
+    position: absolute;
+    height:400px;
+    margin-top: 140px;
+    margin-left: 1100px;
+}
+#palm2{
+    position: absolute;
+    height: 300px;
+    margin-top: 230px;
+    margin-left: 1000px;
+}
+#rock1{
+    position: absolute;
+    height: 250px;
+    margin-top: 440px;
+    margin-right: 300px;
+}
+#rock2{
+    position: absolute;
+    height: 390px;
+    margin-top: 360px;
+}
+#land2{
+    position: absolute;
+    height: 230px;
+    margin-top: 620px;
+}
+.para{
+    font-size: 28px;
+    background-color:#890356;
+    padding: 2rem;
+    background-image: linear-gradient(#890356,#ee69b2);
+}
+.pika{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overflow-wrap: normal;
+    perspective: 10px;
+}
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    
+}
+#sky{
+    position: absolute;
+    height: 100%;
+    width:100%;
+    object-fit:fill;
+    z-index: -2;
+}
+
+#palm2{
+    z-index: 0;
+}
+#sky{
+    transform: translateZ(-10px) scale(2.5);
+}
+
+#mount1{
+    transform: translateZ(-8px) scale(2);
+}
+#mount2{
+    transform:translateZ(-6px) scale(1.7) ;
+}
+
+
+/* For The Navigation Menu's */
+.algorithm-description{
+    border-spacing:100px 30px; 
+}
+.title{
+    margin:100px;
+    text-align:center;
+    font-size:30px;
+}
+.Sorting,.Mathematical,.Dijkstra{
+    /* padding:50px; */
+    font-size:25px;
+}
+.bubblesort{
+    margin-top:75px;
+}
+.title1,.title2,.title3{
+    font-family: 'Bruno Ace SC', cursive;
+    margin-top:100px;
+}
+.Mathematical-title
+{
+    text-align:center;
+     /* background-color:whitesmoke;  */
+     border-radius:80px;
+     margin-top:40px;
+}
+.Dijkstra-title{
+    text-align:center;
+     /* background-color:whitesmoke;  */
+     border-radius:80px;   
+    
+ }  
+ .Sorting-description,.Mathematical-Algorithm-description,.scroll-text{
+    font-family: cursive;
+    padding:40px;
+    text-align:left;
+ }
+.bubblesort{
+    margin-right:13px;
+}
+.selectionsort{
+    margin-left:15px;
+}
+.insertionsort{
+    margin-left:16px;
+} 
+.containerreveal{
+    margin: 100px;
+}
+section.cards{
+    display: flex;
+}
+@media(max-width:900px){
+    section.cards{
+        flex-direction: column;
+    }
+}
+
+.flip-box{
+    margin-left:100px;
+    background-color: transparent;
+    width: 500px;
+    height: 250px;
+    perspective: 1000px;
+    border-radius:80px; 
+}
+  /* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side */
+  .flip-box-front {
+    background-color:rgb(189, 5, 143);
+    color: black;
+    border-radius:80px;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: palevioletred;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius:80px;
+  }
+
+.dfs{
+    margin-top:100px;
+    margin-right:20px;
+}

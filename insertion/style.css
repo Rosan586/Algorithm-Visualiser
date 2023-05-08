@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat+Alternates:wght@600&display=swap');
+
+body {
+  font-family: 'Montserrat Alternates', sans-serif;
+  margin:0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-image: url('blur5.png');
+  background-repeat: no-repeat;
+  backdrop-filter: blur(5px);
+  background-color: #da037c;
+}
+.title{
+      font-family: 'Bruno Ace SC', cursive;
+			margin-left: 30px;
+			font-size: 60px;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: x-large;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.array-controls {
+  margin-bottom: 30px;
+}
+
+.array-controls label {
+  margin-right: 10px;
+}
+
+.array-controls button {
+  margin-left: 10px;
+}
+
+.array-container {
+  display: flex;
+  justify-content: center;
+}
+
+.array-item {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.array-item.highlight {
+  background-color: #ebdc04;
+}
+
+.swap-indicator {
+  background-color: #5e025e;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
+  display: none;
+  width:25%;
+  margin-left:275px;
+}
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+.description{
+  width:50%;
+  text-align:left;
+}
+.description,.table{
+  display:inline-table;
+}
+.body{
+  margin:0px;
+}
+.table{
+  margin-top:20px;
+}
+.description{
+  margin-left:50px;
+  margin-right:300px;
+}
+.column1{
+  border-right:1px solid orange;
+  border-bottom:1px solid orange;
+}
+.column2{
+  border-bottom:1px solid orange;
+}
+.description,.table{
+  font-size:20px;
+  font-family:sans-serif;
+}
+.para{
+  margin-top:30px;
+}
+.em{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.insertion-des{
+	margin-top:250px;
+	background-color: #da037c;
+  }
+  .styler{
+	font-family: 'Bruno Ace SC', cursive;
+	font-size: 40px;
+	text-decoration: underline;
+  }
+  .colour{
+    color: #f39c12;
+    text-decoration:underline;
+    font-weight: 600;
+    }

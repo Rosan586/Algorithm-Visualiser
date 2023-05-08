@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insertion Sort</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Insertion Sort</h1>
+        <div class="array-controls">
+            <bold><label for="arraySizeInput">Array size:</label></bold>
+            <input type="number" id="arraySizeInput" value="20" max="30" min="2">
+            <button class="button" onclick="generateArray()">Generate Array</button>
+            <button class="button" onclick="insertionSort()">Sort</button>
+        </div>
+        <div class="array-container" id="arrayContainer"></div>
+        <div class="swap-indicator" id="swapIndicator"></div>
+    </div>
+    <div class="insertion-des">
+    <div class="description">
+        <p class="styler">Description:</p>
+        <p class="para">Selection Sort is an iterative and in-place sorting algorithm that divides the data structure in two sublists: the ordered one, and the unordered one. The algorithm loops for all the elements of the data structure and for every cycle picks the smallest element of the unordered sublist and adds it to the sorted sublist, progressively filling it.</p>
+        <p>It's a really simple and intuitive algorithm that does not require additional memory, but it's not really efficient on big data structures due to its quadratic time complexity.</p>
+        <p>This algorithm has been upgraded and enhanced in several variants such as <bold class="colour">Heap Sort</bold>.</p>
+      </div>
+      <div class="table">
+        <p class="styler">Complexity:</p>
+        <table>
+          <thead>
+            <tr>
+              <td class="column1"><p>Average Complexity</p></td>
+              <td class="column2"><p>O(n<sup>2</sup>)</p></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="column1"><p>Best Case</p></td>
+              <td class="column2"><p>O(n<sup>2</sup>)</p></td>
+            </tr>
+            <tr>
+              <td class="column1"><p>Worst case</p></td>
+              <td class="column2"><p>O(n<sup>2</sup>)</p></td>
+            </tr>
+            <tr>
+              <td class="column1"><p>Space Complexity</p></td>
+              <td class="column2"><p>O(1)</p></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="insertion.js"></script>
+</body>
+</html>
