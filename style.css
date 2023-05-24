@@ -291,8 +291,8 @@ section.cards{
     margin-right:20px;
 }
 @media ((min-width: 393px) and (min-height: 851px)){
-    body{background-color: #de26b0;
-    }
+    /* body{background-color: #de26b0;
+    } */
     #mount1{
         position:absolute;
         height: 650px;
