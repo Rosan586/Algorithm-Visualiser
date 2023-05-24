@@ -101,15 +101,18 @@ h1 {
   margin-right:300px;
 }
 .column1{
-  border-right:1px solid orange;
-  border-bottom:1px solid orange;
+  border-right:2px solid rgb(159, 9, 240);
+  border-bottom:2px solid rgb(159, 9, 240);
 }
 .column2{
-  border-bottom:1px solid orange;
+  border-bottom:2px solid rgb(159, 9, 240);
 }
 .description,.table{
   font-size:20px;
-  font-family:sans-serif;
+  font-family:cursive;
+  border-radius: 20px;
+	background-color:grey ;
+	padding:12px;
 }
 .para{
   margin-top:30px;
@@ -127,7 +130,51 @@ h1 {
 	text-decoration: underline;
   }
   .colour{
-    color: #f39c12;
+    color: rgb(159, 9, 240);
     text-decoration:underline;
     font-weight: 600;
+    }
+    @media((min-width:393px) and (min-height:851px))
+    {
+    body{
+      background-size:1300px 2000px;
+    }
+    .description{
+      margin-left:50px;
+      margin-right: 100px;
+    }
+    .insertion-des{
+      margin-top:625px;
+    }
+    .title{
+      margin-top:400px;
+      text-align:justify;
+      font-size:100px;
+      margin-left:0;
+    }
+    #arraySizeInput,bold{
+      display:inline-block;
+      font-size:30px;
+    }
+    button{
+      display:block;
+      margin-top:20px;
+      margin-bottom:20px;
+      font-size:50px;
+    }
+    #arraySizeInput{
+      margin-right:250px;
+      margin-left:10px;
+    }
+    .array-container{
+      margin-top:100px;
+      margin-left:-275px;
+    }
+    .container{
+      margin-left:300px;
+    }
+    .swap-indicator{
+      margin-top:80px;
+      margin-left:100px;
+    }
     }
