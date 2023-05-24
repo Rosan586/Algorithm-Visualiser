@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <link rel="stylesheet" href="style.css">
         <title >Algorithm Visualizer</title>
     </head>
     <body>   
-
+        <div class="mobile">
         <div class="pika">
             <section id="homepage" class="ro">
                 <h1 class="logo">BN'B</h1>
@@ -36,18 +37,18 @@
                 <div class="container">
                     <table class="algorithm-description">
                         <div class="cards">
-                            <tr class="Sorting">
+                            <tr class="Sorting" >
                                 <td class="Sorting-title" width="500">
                                     <!-- //flipping -->
                                     <div class="flip-box">
                                         <div class="flip-box-inner">
                                             <div class="flip-box-front">
-                                                <h2 class="title1">Sorting</h2>
+                                                <h2 id="k1" class="title1">Sorting</h2>
                                             </div>
                                             <div class="flip-box-back">
-                                                    <li class="bubblesort"><a href="bubblesort\bubble.html">BubbleSort</a></li>
+                                                    <div id="k2"><li class="bubblesort"><a href="bubblesort\bubble.html">BubbleSort</a></li>
                                                     <li class="selectionsort"><a href="selection\selection.html">SelectionSort</a></li>     
-                                                    <li class="insertionsort"><a href="insertion\insertion.html">InsertionSort</a></li>
+                                                    <li class="insertionsort"><a href="insertion\insertion.html">InsertionSort</a></li></div>
                                             </div>
                                         </div>
                                     </div> 
@@ -57,49 +58,32 @@
                                         A sorting algorithm is a method for reorganizing a large number of items into a specific order, such as alphabetical, highest-to-lowest value or shortest-to-longest distance. Sorting algorithms take lists of items as input data, perform specific operations on those lists and deliver ordered arrays as output.</p>
                                     </td>
                             </tr>
-                            <tr class="Mathematical">
-                                    <td class="Mathematical-Algorithm-description" width="500">
-                                        Path finding algorithms build on top of graph search algorithms and explore routes between nodes, starting at one node and traversing through relationships until the destination has been reached. These algorithms find the cheapest path in terms of the number of hops or weight.
-                                    </td>
-                                    <td class="Mathematical-title" width="500">
-                                        <div class="flip-box">
-                                            <div class="flip-box-inner">
-                                                <div class="flip-box-front">
-                                                    <h2 class="title2">Path Finding</h2>
-                                                </div>
-                                                <div class="flip-box-back">
-                                                    <li class="dfs"><a href="dfs\dfs.html">Depth First Search</a></li>
-                                                    <li class="bfs"><a href="bfs\bfs.html">Breadth First Search</a></li> 
-                                                </div>
+                        <tr class="Mathematical">
+                                <td class="Mathematical-Algorithm-description" width="500">
+                                    Path finding algorithms build on top of graph search algorithms and explore routes between nodes, starting at one node and traversing through relationships until the destination has been reached. These algorithms find the cheapest path in terms of the number of hops or weight.
+                                </td>
+                                <td class="Mathematical-title" width="100">
+                                    <div class="flip-box" id="filp-box-1" >
+                                        <div class="flip-box-inner">
+                                            <div class="flip-box-front">
+                                                <h2 id="a1" class="title2">Path Finding</h2>
+                                            </div>
+                                            <div class="flip-box-back">
+                                                <div id="a2"><li class="dfs"><a href="dfs\dfs.html">Depth First Search</a></li>
+                                                <li class="bfs"><a href="bfs\bfs.html">Breadth First Search</a></li> </div>
                                             </div>
                                         </div>
-                                    </td>
-                            </tr>
-                            <tr class="Dijkstra">
-                                    <td class="Dijkstra-title">
-                                        <div class="flip-box">
-                                            <div class="flip-box-inner">
-                                                <div class="flip-box-front">
-                                                    <h2 class="title3">Dijkstra Algorithm</h2>
-                                                </div>
-                                                <div class="flip-box-back"> </div> 
-
-                                            </div>
-                                        </div>
-                                    </td>
-                                        <td class="scroll-text">
-                                         Dijkstra's Algorithm is a pathfinding algorithm that generates every single route through the graph, and then selects the route that has the lowest overall cost. This works by iteratively calculating a distance for each node in the graph, starting from the start node, and continuing until we reach the end node.
-                                        </td>
                                     </div>
-                                </tr>
+                                </td>
+                        </tr>
                             </div>
                         </table>
                     </div>
                 </section>
             </div> 
         </div>
-        <div class="container-top">
             <a href="#homepage" class="top"></a>
         </div>
+    </div>
     </body>
 </html>
