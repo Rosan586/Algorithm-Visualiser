@@ -173,15 +173,18 @@ body {
     margin-right:300px;
   }
   .column1{
-    border-right:1px solid orange;
-    border-bottom:1px solid orange;
+    border-right:2px solid rgb(159, 9, 240);
+    border-bottom:2px solid rgb(159, 9, 240);
   }
   .column2{
-    border-bottom:1px solid orange;
+    border-bottom:2px solid rgb(159, 9, 240);
   }
   .description,.table{
     font-size:20px;
-    font-family:sans-serif;
+    font-family:cursive;
+    border-radius: 20px;
+    background-color:grey ;
+    padding:12px;
   }
   .para{
     margin-top:30px;
@@ -197,6 +200,37 @@ body {
 	font-family: 'Bruno Ace SC', cursive;
 	font-size: 40px;
 	text-decoration: underline;
+  }
+  .colour{
+	color: rgb(159, 9, 240);
+	text-decoration:underline;
+	font-weight: 600;
+  }
+
+  @media((min-width:393px) and (min-height:851px))
+  {
+      body{
+        background-size:1300px 2250px;
+      }
+      .dfs-des{
+        margin-top:800px;
+      }
+      .title{
+        margin-top:400px;
+        margin-left:180px;
+      }
+      .description{
+        margin-right:70px;
+      }
+      #container{
+        margin-top:200px;
+      }
+      #contain{
+        margin-top:100px;
+      }
+      .button1{
+        margin-left:370px;
+      }
   }
 
 </style>
@@ -228,8 +262,8 @@ body {
       <div class="dfs-des">
       <div class="description">
         <p class="styler">Description:</p>
-        <p class="para">Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and explores as far as possible along each branch before backtracking. Extra memory, usually a stack, is needed to keep track of the nodes discovered so far along a specified branch which helps in backtracking of the graph.</p>
-        <p>The result of a depth-first search of a graph can be conveniently described in terms of a spanning tree of the vertices reached during the search. Based on this spanning tree, the edges of the original graph can be divided into three classes: forward edges, which point from a node of the tree to one of its descendants, back edges, which point from a node to one of its ancestors, and cross edges, which do neither.</p>
+        <p class="para">Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the <bold class="colour">root node</bold> (selecting some arbitrary node as the root node in the case of a graph) and explores as far as possible along each branch before backtracking. Extra memory, usually a stack, is needed to keep track of the nodes discovered so far along a specified branch which helps in backtracking of the graph.</p>
+        <p>The result of a depth-first search of a graph can be conveniently described in terms of a spanning tree of the vertices reached during the search. Based on this <bold class="colour">spanning tree</bold>, the edges of the original graph can be divided into three classes: <bold class="colour">forward edges</bold>, which point from a node of the tree to one of its descendants, <bold class="colour">back edges</bold>, which point from a node to one of its ancestors, and <bold class="colour">cross edges</bold>, which do neither.</p>
         <p>Sometimes tree edges, edges which belong to the spanning tree itself, are classified separately from forward edges. If the original graph is undirected then all of its edges are tree edges or back edges.</p>
       </div>
       <div class="table">
